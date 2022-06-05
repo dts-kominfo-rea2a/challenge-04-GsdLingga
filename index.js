@@ -15,9 +15,9 @@ const createDate = (date, position = null) => {
   }
 
   if (position === null) {
-    return saveDate.sort().join("-");
+    return saveDate.sort().join("-").toString();
   } else {
-    return saveDate[position];
+    return saveDate[position].toString();
   }
 };
 
